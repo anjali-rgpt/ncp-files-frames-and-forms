@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 2</title>
+    <style>
+        .form-frame{
+            background-color: lavenderblush;
+            display: flex;
+            justify-content:space-evenly;
+        }
+
+        .form-frame > div{
+            float: left;
+            margin:10px;
+            
+        }
+
+        .req{
+            color:red;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div class="form-frame">
+            <div>
+                <label>Title:</label>
+                <select name="title">
+                    <option value="Dr." selected="selected">Dr.</option>
+                    <option value="Mr.">Mr.</option>
+                    <option value="Miss">Miss</option>
+                    <option value="Ms.">Ms.</option>
+                    <option value="Mx.">Mx.</option>
+                </select>
+            </div>
+            <div>
+                <label class="req">First Name</label>
+                <input type="text" name="fname">
+            </div>
+            <div>
+                <label class="req">Last Name</label>
+                <input type="text" name="lname">
+            </div>
+        </div>
+
+        <div class="form-frame">
+            <div>
+                <label>Demo Card ID:</label>
+                <input type="text" name="dcid">
+            </div>
+            <div>
+                <label >Company Card No.</label>
+                <input type="text" name="ccno">
+            </div>
+            <div>
+                <label >Birth Date</label>
+                <input type="date" name="dob">
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

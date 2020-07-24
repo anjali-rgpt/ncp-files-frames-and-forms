@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 3</title>
+    <style>
+        .form-frame{
+            background-color: lavenderblush;
+            display: flex;
+            justify-content:space-evenly;
+        }
+
+        .form-frame > div{
+            float: left;
+            margin:10px;
+            
+        }
+
+        .req{
+            color:red;
+        }
+
+        #fax{
+            float:right;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div class="form-frame">
+            <div>
+                <label>License Country:</label>
+                <select name="lic">
+                    <option value="---" selected="---">Dr.</option>
+                    <option value="India">India</option>
+                    <option value="Barbados">Barbados</option>
+                    <option value="USA">United States of America</option>
+                </select>
+            </div>
+            <div>
+                <label >Issue Date</label>
+                <input type="date" name="idate">
+            </div>
+            <div>
+                <label >IATA</label>
+                <input type="text" name="iata">
+            </div>
+        </div>
+
+        <div class="form-frame">
+            <div>
+                <label>Driver License Number:</label>
+                <input type="text" name="driver">
+            </div>
+            <div>
+                <div>
+                    <label >Expiry Date</label>
+                    <input type="date" name="edate">
+                </div>
+            </div>
+            <div>
+                <label >Phone 1</label>
+                <input type="text" name="p1">
+            </div>
+        </div>
+
+        <div class="form-frame">
+            <div>
+                <label>Address:</label>
+                <textarea name="address"></textarea>
+            </div>
+            <div>
+                <div>
+                    <label >Phone 2</label>
+                    <input type="text" name="p2">
+                </div>
+            </div>
+            
+        </div>
+        <div id="fax">
+            <label>Fax 1</label>
+            <input type="text" name="fax1">
+        </div>
+    </form>
+</body>
+
+</html>

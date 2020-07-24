@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 1</title>
+    <style>
+        .form-frame{
+            background-color: lavenderblush;
+            display: flex;
+            justify-content:space-around;
+        }
+
+        .form-frame > div{
+            float: left;
+            margin:10px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <form method="POST">
+        <div class="form-frame">
+            <div id="document-type">
+                <input type="radio" name="document" value="Id" /><label>Id </label>
+                <input type="radio" name="document" value="Passport" /><label>Passport </label>
+            </div>
+            <div>
+                <label> Number:</label>
+                <input type="text" name="idnum">
+            </div>
+
+            <div>
+                <label>Passport Expiration Date:</label>
+                <input type="date" name="expdate">
+            </div>
+
+            <div>
+                <label>Passport Country:</label>
+                <select name="country">
+                    <option value="---" selected>---</option>
+                    <option value="India">India</option>
+                    <option value="Barbados">Barbados</option>
+                    <option value="USA">United States of America</option>
+                </select>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <style>
+        .form-frame {
+            background-color: lavenderblush;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .form-frame>div {
+            float: left;
+            margin: 10px;
+
+        }
+
+        .req {
+            color: red;
+        }
+
+        .section {
+            border-color: rebeccapurple;
+            border-width: 2pt;
+            border-style: solid;
+            text-align: center;
+        }
+
+        #fax {
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <form method="POST" action="http://google.co.in">
+
+        <frameset rows="25%, 25%, 25%, *">
+            <frame src="Additional/form1.html" />
+            <frame src="Additional/form2.html">
+                <frame src="Additional/form3.html"></frame>
+                <frame></frame>
+        </frameset>
+
+        <div class="section">
+            <div class="form-frame">
+                <div id="document-type">
+                    <input type="radio" name="document" value="Id" /><label>Id </label>
+                    <input type="radio" name="document" value="Passport" /><label>Passport </label>
+                </div>
+                <div>
+                    <label> Number:</label>
+                    <input type="text" name="idnum">
+                </div>
+
+                <div>
+                    <label>Passport Expiration Date:</label>
+                    <input type="date" name="expdate">
+                </div>
+
+                <div>
+                    <label>Passport Country:</label>
+                    <select name="country">
+                        <option value="---" selected>---</option>
+                        <option value="India">India</option>
+                        <option value="Barbados">Barbados</option>
+                        <option value="USA">United States of America</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="form-frame">
+                <div>
+                    <label>Title:</label>
+                    <select name="title">
+                        <option value="Dr." selected="selected">Dr.</option>
+                        <option value="Mr.">Mr.</option>
+                        <option value="Miss">Miss</option>
+                        <option value="Ms.">Ms.</option>
+                        <option value="Mx.">Mx.</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="req">First Name</label>
+                    <input type="text" name="fname">
+                </div>
+                <div>
+                    <label class="req">Last Name</label>
+                    <input type="text" name="lname">
+                </div>
+            </div>
+
+            <div class="form-frame">
+                <div>
+                    <label>Demo Card ID:</label>
+                    <input type="text" name="dcid">
+                </div>
+                <div>
+                    <label>Company Card No.</label>
+                    <input type="text" name="ccno">
+                </div>
+                <div>
+                    <label>Birth Date</label>
+                    <input type="date" name="dob">
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="form-frame">
+                <div>
+                    <label>License Country:</label>
+                    <select name="lic">
+                        <option value="---" selected="---">Dr.</option>
+                        <option value="India">India</option>
+                        <option value="Barbados">Barbados</option>
+                        <option value="USA">United States of America</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Issue Date</label>
+                    <input type="date" name="idate">
+                </div>
+                <div>
+                    <label>IATA</label>
+                    <input type="text" name="iata">
+                </div>
+            </div>
+
+            <div class="form-frame">
+                <div>
+                    <label>Driver License Number:</label>
+                    <input type="text" name="driver">
+                </div>
+                <div>
+                    <div>
+                        <label>Expiry Date</label>
+                        <input type="date" name="edate">
+                    </div>
+                </div>
+                <div>
+                    <label>Phone 1</label>
+                    <input type="text" name="p1">
+                </div>
+            </div>
+
+            <div class="form-frame">
+                <div>
+                    <label>Address:</label>
+                    <textarea name="address"></textarea>
+                </div>
+                <div>
+                    <div>
+                        <label>Phone 2</label>
+                        <input type="text" name="p2">
+                    </div>
+                </div>
+
+            </div>
+            <div id="fax" class="form-frame">
+                <label>Fax 1</label>
+                <input type="text" name="fax1">
+            </div>
+        </div>
+        <div class="section">
+            <input type="submit"/> 
+
+            <input type="reset">
+        </div>
+    </form>
+</body>
+
+</html>
